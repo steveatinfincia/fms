@@ -15,6 +15,8 @@
 #ifndef _fcpv2_
 #define _fcpv2_
 
+#include <sys/time.h>
+
 #include <map>
 #include <vector>
 #include <string>
