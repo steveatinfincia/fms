@@ -1,0 +1,523 @@
+<!--[BEGIN FORUMPAGE]-->
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>[PAGETITLE]</title>
+<link rel="stylesheet" type="text/css" href="styles/basestyle.css">
+<link rel="stylesheet" type="text/css" href="styles/forumstyle.css">
+</head>
+<body>
+<div class="forumcontainer">
+[FORUMCONTENT]
+</div>
+</body>
+</html>
+<!--[END FORUMPAGE]-->
+
+<!--[BEGIN FORUMLINKHEADER]-->
+<tr>
+	<td colspan="5" class="forumlinkheader">
+		<a href="/index.htm">{translation.web.navlink.home}</a> | <a href="[FPROXYPROTOCOL]://[FPROXYHOST]:[FPROXYPORT]/">{translation.web.navlink.browsefreenet}</a> | <a href="/forummain.htm?[VIEWSTATEQS]">{translation.web.navlink.browseforums}</a>
+	</td>
+</tr>
+<!--[END FORUMLINKHEADER]-->
+
+<!--[BEGIN FORUMLOCATIONHEADER]-->
+<tr>
+	<td colspan="2" class="forumlocationheader">
+		[LOCATIONBREADCRUMBS]
+	</td>
+	<td colspan="3" class="forumloginheader">
+		[FORUMLOGINHEADER]
+		[FORUMSEARCH]
+	</td>
+</tr>
+<!--[END FORUMLOCATIONHEADER]-->
+
+<!--[BEGIN LOCATIONBREADCRUMB]-->
+&#0187; <a href="[BREADCRUMBLINK]">[BREADCRUMBNAME]</a> 
+<!--[END LOCATIONBREADCRUMB]-->
+
+<!--[BEGIN FORUMSEARCHBOX]-->
+<div id="forumsearchbox">
+<form name="frmsearch" action="[FORUMSEARCHBOXACTION]" method="post">
+<input type="hidden" name="formaction" value="search">
+[FORUMSEARCHBOXEXTRAFIELDS]
+<input type="text" name="searchquery" class="search" style="width:250px;">
+<input type="submit" value="{translation.web.page.forum.searchbox.search}">
+</form>
+</div>
+<!--[END FORUMSEARCHBOX]-->
+
+
+
+
+
+
+
+
+<!--[BEGIN FORUMLASTPOST]-->
+{translation.web.page.forummain.lastposton} [FORUMLASTPOSTDATE] {translation.web.page.forummain.in}<br />
+[FORUMLASTPOSTSUBJECT] {translation.web.page.forummain.by} [FORUMLASTPOSTAUTHOR]
+<!--[END FORUMLASTPOST]-->
+
+<!--[BEGIN FORUMROW]-->
+<tr class="forumrow">
+	<td class="newpost">[NEWPOSTIMAGE]</td>
+	<td><div class="forumname">[FORUMNAME]</div><div class="forumdescription">[FORUMDESCRIPTION]</div></td>
+	<td class="forumpostcount">[FORUMPOSTCOUNT] {translation.web.page.forummain.posts}</td>
+	<td class="forumlastpost">[FORUMLASTPOSTINFO]</td>
+</tr>
+<!--[END FORUMROW]-->
+
+<!--[BEGIN FORUMMAINCONTENT]-->
+<table width="100%">
+	[FORUMLINKHEADER]
+	[FORUMLOCATIONHEADER]
+	<tr class="forummainheader">
+		<td colspan="5" style="padding:5px 20px 5px 5px; text-align:right;"><span>[MARKGLOBALALLREADLINK]</span></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<table width="100%">
+				<tr class="forumcolumnheader">
+					<th class="forumcolumnheadernew">{translation.web.page.forummain.header.new}</th>
+					<th class="forumcolumnheaderforum">{translation.web.page.forummain.header.forum}</th>
+					<th class="forumcolumnheaderposts">{translation.web.page.forummain.header.posts}</th>
+					<th class="forumcolumnheaderlastpost">{translation.web.page.forummain.header.lastpost}</th>
+				</tr>
+				[FORUMROWS]
+			</table>
+		</td>
+	</tr>
+</table>
+<!--[END FORUMMAINCONTENT]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[BEGIN FORUMTHREADSCONTENT]-->
+<table width="100%">
+	[FORUMLINKHEADER]
+	[FORUMLOCATIONHEADER]
+	[FORUMTHREADSHEADER]
+	<tr class="forumcolumnheader">
+		<th class="forumcolumnheadernew">{translation.web.page.forumthreads.header.new}</th>
+		<th class="forumcolumnheadersubject">{translation.web.page.forumthreads.header.subject}</th>
+		<th class="forumcolumnheaderstartedby">{translation.web.page.forumthreads.header.startedby}</th>
+		<th class="forumcolumnheaderreplies">{translation.web.page.forumthreads.header.replies}</th>
+		<th class="forumcolumnheaderlastpost">{translation.web.page.forumthreads.header.lastpost}</th>
+	</tr>
+	[FORUMTHREADROWS]
+	[FORUMTHREADPAGES]
+</table>
+<!--[END FORUMTHREADSCONTENT]-->
+
+<!--[BEGIN FORUMTHREADSHEADER]-->
+	<tr class="forumthreadsheader">
+		<td colspan="5"><span>[MARKALLREADLINK]</span><span style="margin-left:10px;">[NEWPOSTLINK]</span></td>
+	</tr>
+<!--[END FORUMTHREADSHEADER]-->
+
+<!--[BEGIN FORUMTHREADROWODD]-->
+	<tr class="forumthreadrow forumthreadrowodd">
+		<td class="newpost">[NEWPOSTIMAGE]</td>
+		<td class="subject">[THREADSUBJECT]</td>
+		<td class="startedby">[STARTEDBY]</td>
+		<td class="replies">[REPLIES]</td>
+		<td class="lastpost">[THREADLASTPOSTINFO]</td>
+	</tr>
+<!--[END FORUMTHREADROWODD]-->
+
+<!--[BEGIN FORUMTHREADROWEVEN]-->
+	<tr class="forumthreadrow forumthreadroweven">
+		<td class="newpost">[NEWPOSTIMAGE]</td>
+		<td class="subject">[THREADSUBJECT]</td>
+		<td class="startedby">[STARTEDBY]</td>
+		<td class="replies">[REPLIES]</td>
+		<td class="lastpost">[THREADLASTPOSTINFO]</td>
+	</tr>
+<!--[END FORUMTHREADROWEVEN]-->
+
+<!--[BEGIN FORUMTHREADPAGES]-->
+	<tr class="threadpages">
+		<td colspan="5">
+			{translation.web.page.forumthreads.pages} [PAGENUMBERS] [PAGENUMBERFORM]
+		</td>
+	</tr>
+<!--[END FORUMTHREADPAGES]-->
+
+<!--[BEGIN THREADLASTPOSTINFO]-->
+	[THREADLASTPOSTDATE] [THREADLASTPOSTIMAGE]<br />{translation.web.page.forumthreads.by} [THREADLASTPOSTAUTHOR]
+<!--[END THREADLASTPOSTINFO]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[BEGIN FORUMVIEWTHREADCONTENT]-->
+<table width="100%">
+	[FORUMLINKHEADER]
+	[FORUMLOCATIONHEADER]
+	[FORUMVIEWTHREADHEADER]
+	<tr>
+	<td colspan="5">
+	<table class="forumthread" width="100%">
+	[THREADPOSTROWS]
+	</table>
+	</td>
+	</tr>
+</table>
+<!--[END FORUMVIEWTHREADCONTENT]-->
+
+<!--[BEGIN FORUMVIEWTHREADHEADER]-->
+<tr class="forumviewthreadheader">
+	<td colspan="5">
+		<span>[FIRSTUNREADPOSTLINK]</span><span style="margin-left:10px;">[MARKUNREADLINK]</span>
+	</td>
+</tr>
+<!--[END FORUMVIEWTHREADHEADER]-->
+
+<!--[BEGIN THREADPOSTROWODD]-->
+<tr class="lightbg topborder">
+	<td class="name" rowspan="2">
+	[THREADPOSTANCHOR][THREADPOSTAUTHORINFO]
+	</td>
+	<td class="title">
+	[THREADPOSTTITLE] {translation.web.page.forumviewthread.on} [THREADPOSTDATE]
+	</td>
+	<td>
+        <span class="postlink">[THREADPOSTLINK]</span>
+        <span class="replylink">[THREADPOSTREPLYLINK]</span>
+	</td>
+</tr>
+<tr class="lightbg">
+	<td class="post" colspan="2">[THREADPOSTBODY][THREADPOSTATTACHMENTS][THREADPOSTSIGNATUREDIV]</td>
+</tr>
+<!--[END THREADPOSTROWODD]-->
+
+<!--[BEGIN THREADPOSTROWEVEN]-->
+<tr class="darkbg topborder">
+	<td class="name" rowspan="2">
+	[THREADPOSTANCHOR][THREADPOSTAUTHORINFO]
+	</td>
+	<td class="title">
+	[THREADPOSTTITLE] {translation.web.page.forumviewthread.on} [THREADPOSTDATE]
+	</td>
+	<td>
+        <span class="postlink">[THREADPOSTLINK]</span>
+        <span class="replylink">[THREADPOSTREPLYLINK]</span>
+	</td>	
+</tr>
+<tr class="darkbg">
+	<td class="post" colspan="2">[THREADPOSTBODY][THREADPOSTATTACHMENTS][THREADPOSTSIGNATUREDIV]</td>
+</tr>
+<!--[END THREADPOSTROWEVEN]-->
+
+<!--[BEGIN THREADPOSTATTACHMENT]-->
+<div class="attachment">
+	[THREADPOSTATTACHMENTLINK] [THREADPOSTATTACHMENTSIZE]
+</div>
+<!--[END THREADPOSTATTACHMENT]-->
+
+<!--[BEGIN THREADPOSTSIGNATUREDIV]-->
+<div class="signature">
+	 [THREADPOSTSIGNATURE]
+</div>
+<!--[END THREADPOSTSIGNATUREDIV]-->
+
+<!--[BEGIN THREADPOSTAUTHORINFO]-->
+[THREADPOSTAUTHORNAME]<br />
+[CONDITIONALTRUSTTABLE]<br />
+[THREADPOSTAUTHORAVATAR]
+<!--[END THREADPOSTAUTHORINFO]-->
+
+<!--[BEGIN TRUSTTABLE]-->
+<table class="trust">
+	<tr>
+		<th colspan="3">{translation.web.page.forumviewthread.trust}</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{translation.web.page.forumviewthread.local}</td>
+		<td>{translation.web.page.forumviewthread.peer}</td>
+	</tr>
+	<tr>
+		<td>{translation.web.page.forumviewthread.message}</td>
+		<td style="text-align:right;">[LOCALMESSAGETRUST]</td>
+		<td style="text-align:right;">[PEERMESSAGETRUST]</td>
+	</tr>
+	<tr>
+		<td>{translation.web.page.forumviewthread.trustlist}</td>
+		<td style="text-align:right;">[LOCALTRUSTLISTTRUST]</td>
+		<td style="text-align:right;">[PEERTRUSTLISTTRUST]</td>
+	</tr>
+</table>
+<!--[END TRUSTTABLE]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[BEGIN FORUMCREATEPOSTCONTENT]-->
+<table class="createpost" width="100%">
+	[FORUMLINKHEADER]
+	[FORUMLOCATIONHEADER]
+	<tr>
+		<td colspan="5">
+			[STARTFORM]
+			<table>
+				<tr>
+					<td colspan="2" style="text-align:center;font-weight:bolder;color:#ee0000;">
+						[ERROR]
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right;vertical-align:top;width:120px;">
+						{translation.web.page.forumcreatepost.from}
+					</td>
+					<td>
+						[AUTHORDROPDOWN]
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right;vertical-align:top;">
+						{translation.web.page.forumcreatepost.subject}
+					</td>
+					<td>
+						[SUBJECTTEXTBOX]
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right;vertical-align:top;">
+						{translation.web.page.forumcreatepost.message}
+					</td>
+					<td>
+						[MESSAGETEXTAREA]
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right;vertical-align:top;">
+						{translation.web.page.forumcreatepost.crosspost}
+					</td>
+					<td>
+						[CROSSPOST]
+					</td>
+				</tr>
+				[NEWPOSTATTACHMENTS]
+				<tr>
+					<td style="text-align:right;">
+						{translation.web.page.forumcreatepost.attach}
+					</td>
+					<td>
+					[ATTACHFORM]
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;">
+					[SENDBUTTON]
+					</td>
+				</tr>
+			</table>
+			[ENDFORM]
+		</td>
+	</tr>
+</table>
+<!--[END FORUMCREATEPOSTCONTENT]-->
+
+<!--[BEGIN NEWPOSTATTACHMENT]-->
+				<tr>
+					<td>
+					</td>
+					<td>
+						[ATTACHMENTNAME] ([ATTACHMENTSIZE] {translation.web.page.forumcreatepost.bytes})
+					</td>
+				</tr>
+<!--[END NEWPOSTATTACHMENT]-->
+
+<!--[BEGIN FORUMCREATEPOSTSUCCESSFULSEND]-->
+<table width="100%">
+	[FORUMLINKHEADER]
+	[FORUMLOCATIONHEADER]
+	<tr>
+	<td colspan="5" style="padding:5px;">
+	{translation.web.page.forumcreatepost.successfulsend}
+	</td>
+	</tr>
+</table>
+<!--[END FORUMCREATEPOSTSUCCESSFULSEND]-->
+
+
+
+
+
+
+
+
+
+<!--[BEGIN FORUMSEARCHCONTENT]-->
+<table width="100%">
+	[FORUMLINKHEADER]
+	[FORUMLOCATIONHEADER]
+	<tr>
+		<td colspan="5">
+			[FORUMSEARCHCRITERIA]
+		</td>
+	</tr>
+	[FORUMSEARCHRESULTS]
+</table>
+<!--[END FORUMSEARCHCONTENT]-->
+
+<!--[BEGIN FORUMSEARCHCRITERIA]-->
+<center>
+<form name="frmsearch" action="[FORUMSEARCHBOXACTION]" method="post">
+<table class="forumsearch">
+	<tr>
+		<td class="heading">
+			{translation.web.page.forumsearch.searchtext}
+		</td>
+		<td>
+			<input type="hidden" name="formaction" value="search">
+			[FORUMSEARCHBOXEXTRAFIELDS]
+			[FORUMSEARCHQUERY]
+		</td>
+		<td rowspan="7" style="vertical-align:top;">
+			<strong>{translation.web.page.forumsearch.examples}</strong><br />
+			<em>{translation.web.page.forumsearch.searchnotes}</em><br />
+			{translation.web.page.forumsearch.example1}<br />
+			{translation.web.page.forumsearch.example2}<br />
+			{translation.web.page.forumsearch.example3}<br />
+			{translation.web.page.forumsearch.example4}<br />
+			{translation.web.page.forumsearch.example5}
+		</td>
+	</tr>
+	<tr>
+		<td class="heading">
+			{translation.web.page.forumsearch.subject}
+		</td>
+		<td>
+			[FORUMSEARCHSUBJECT]
+		</td>
+	</tr>
+	<tr>
+		<td class="heading">
+			{translation.web.page.forumsearch.author}
+		</td>
+		<td>
+			[FORUMSEARCHAUTHOR]
+		</td>
+	</tr>
+	<tr>
+		<td class="heading">
+			{translation.web.page.forumsearch.board}
+		</td>
+		<td>
+			[FORUMSEARCHBOARDID]
+		</td>
+	</tr>
+	<tr>
+		<td class="heading">
+			{translation.web.page.forumsearch.daterange}
+		</td>
+		<td>
+			[FORUMSEARCHSTARTDATE] - [FORUMSEARCHENDDATE]
+		</td>
+	</tr>
+	<tr>
+		<td class="heading">
+			{translation.web.page.forumsearch.sortby}
+		</td>
+		<td>
+			[FORUMSEARCHSORTBY] [FORUMSEARCHSORTORDER]
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:center;">
+			<input type="submit" value="{translation.web.page.forumsearch.search}">
+		</td>
+	</tr>
+</table>
+</form>
+</center>
+<!--[END FORUMSEARCHCRITERIA]-->
+
+<!--[BEGIN FORUMSEARCHRESULTS]-->
+<table class="forumsearch" style="width:100%;">
+	<tr>
+		<th>{translation.web.page.forumsearch.header.author}</th>
+		<th>{translation.web.page.forumsearch.header.subject}</th>
+		<th>{translation.web.page.forumsearch.header.date}</th>
+		<th>{translation.web.page.forumsearch.header.board}</th>
+	</tr>
+	[SEARCHRESULTROWS]
+</table>
+<!--[END FORUMSEARCHRESULTS]-->
+
+<!--[BEGIN SEARCHRESULTEVEN]-->
+<tr class="lightbg topborder">
+	<td>
+		[AUTHOR]
+	</td>
+	<td>
+		[SUBJECT]
+	</td>
+	<td>
+		[DATE]
+	</td>
+	<td>
+		[BOARD]
+	</td>
+</tr>
+<!--[END SEARCHRESULTEVEN]-->
+
+<!--[BEGIN SEARCHRESULTODD]-->
+<tr class="darkbg topborder">
+	<td>
+		[AUTHOR]
+	</td>
+	<td>
+		[SUBJECT]
+	</td>
+	<td>
+		[DATE]
+	</td>
+	<td>
+		[BOARD]
+	</td>
+</tr>
+<!--[END SEARCHRESULTODD]-->
+
+<!--[BEGIN SEARCHRESULTLIMITED]-->
+<tr>
+	<td colspan="5" style="font-weight:bolder;">
+		{translation.web.page.forumsearch.limited50}
+	</td>
+</tr>
+<!--[END SEARCHRESULTLIMITED]-->
